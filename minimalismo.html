@@ -5,132 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda Minimalista</title>
     <style>
-        .pagina
-        {
-         background-color: rgb(226, 224, 224);   
-        }  
-        .titulo
-        {
-         background-color: rgb(3, 2, 2);   
-        }    
-        .navegacion
-        {
-         background-color: rgb(178, 173, 173);   
-        }  
+        .fondo {
+            font-family: 'Helvetica Neue', Cambria, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #020202;
+        }
+        .titulo {
+            background-color: rgb(1, 1, 1);
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+            margin: 0;
+            font-size: 3em;
+        }
+        .navegacion {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        .navegacion li {
+            margin: 0 15px;
+        }
+        .navegacion a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        .navegacion a:hover {
+            background-color: #f0f0f0;
+        }
+        h2 {
+            border-bottom: 2px solid rgb(3, 3, 3);
+            padding-bottom: 10px;
+        }
+        article, main, footer {
+            padding: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+        figure img {
+            width: 600px;
+            height: 700px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: rgb(5, 5, 5);
+            color: white;
+        }
+        td {
+            text-align: center;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+        }
+        footer {
+            background-color: rgb(13, 12, 14);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
-<body class="pagina">
+<body class="fondo">
     <header>
-        <h1 style="color:rgb(252, 252, 252);"class="titulo">Moda Minimalista</h1>
-        <h2 style="color:rgb(252, 252, 252);" class="navegacion">Tendencias</h2>
-        <ul style="color:rgb(252, 252, 252);" class="navegacion">
+        <h1 class="titulo">Minimalismo</h1>
+        <ul class="navegacion">
             <li><a href="index.html">La Moda</a></li>
             <li><a href="vintage.html">Moda Vintage</a></li>
             <li><a href="minimalismo.html">Minimalismo</a></li>
             <li><a href="sostenible.html">Moda Sostenible</a></li>
             <li><a href="accesorios.html">Accesorios Destacados</a></li>
-        </ul> 
+        </ul>
     </header>
     <main>
         <article>
-            <header>
-                <h2 id="moda">La Moda Minimalista</h2>
-                <nav>
-                    <ul>
-                        <li><a href="#moda">La Moda Minimalista</a></li> 
-                        <li><a href="#caracteristicas">Características</a></li>
-                        <li><a href="#incorporar">Cómo Incorporar</a></li>
-                        <li><a href="#tendencias">Tendencias Actuales</a></li>
-                        <li><a href="#beneficios">Beneficios</a></li>
-                    </ul>
-                </nav>
-                <figure>
-                    <img width="300px" src="https://media.vogue.mx/photos/6294c2b6f873e31e8059aa71/master/w_1600%2Cc_limit/278879686_150607687453768_3283693174527572146_n.jpg" alt="modelos">
-                </figure>
-                <p><b>La moda minimalista</b> se caracteriza por la simplicidad, la elegancia y la funcionalidad. Se trata de prendas de colores neutros, líneas limpias y cortes sencillos que nos permiten combinarlas fácilmente entre sí.</p>
-                <blockquote>
-                    "Menos es más." - Ludwig Mies van der Rohe
-                </blockquote>
-            </header>
-            <section>
-                <h3 id="caracteristicas">Características del Estilo Minimalista</h3>
-                <ul>
-                    <li><b>Colores Neutros:</b> Blanco, negro, gris y beige son los colores predominantes.</li>
-                    <li><b>Líneas Limpias:</b> Prendas con cortes rectos y sin adornos innecesarios.</li>
-                    <li><b>Materiales de Calidad:</b> Telas duraderas y de alta calidad.</li>
-                    <li><b>Accesorios Mínimos:</b> Uso limitado de accesorios para mantener la simplicidad.</li>
-                </ul>
-                <p>El estilo minimalista no solo es una elección de moda, sino también una filosofía de vida que aboga por la simplicidad y la funcionalidad.</p>
-            </section>
-            <section>
-                <h3 id="incorporar">Cómo Incorporar la Moda Minimalista</h3>
-                <ul>
-                    <li><b>Prendas Básicas:</b> Opta por camisetas blancas, pantalones rectos y abrigos simples.</li>
-                    <li><b>Colores Neutros:</b> Elige una paleta de colores neutros para facilitar las combinaciones.</li>
-                    <li><b>Accesorios Simples:</b> Usa relojes de líneas limpias y bolsos de cuero sin adornos.</li>
-                </ul>
-                <p>Incorporar la moda minimalista en tu estilo diario puede simplificar tu rutina y ayudarte a proyectar una imagen sofisticada y atemporal.</p>
-            </section>
-            <section>
-                <h3 id="tendencias">Tendencias Actuales en Moda Minimalista</h3>
-                <ul>
-                    <li><b>Armario Cápsula:</b> Pocas prendas de alta calidad que se adapten a cualquier ocasión.</li>
-                    <li><b>Moda Sostenible:</b> Priorizar la calidad sobre la cantidad para reducir el impacto ambiental.</li>
-                    <li><b>Versatilidad:</b> Prendas que se pueden combinar de múltiples maneras.</li>
-                </ul>
-                <p>Las tendencias actuales en moda minimalista reflejan un deseo de volver a lo esencial y duradero, en contraste con la moda rápida y desechable.</p>
-            </section>
-            <section>
-                <h3 id="beneficios">Beneficios de la Moda Minimalista</h3>
-                <ul>
-                    <li><b>Calidad:</b> Prendas hechas con materiales de mejor calidad y técnicas de confección más duraderas.</li>
-                    <li><b>Unicidad:</b> Cada pieza es única, permitiendo expresar el estilo personal de manera distintiva.</li>
-                    <li><b>Sostenibilidad:</b> Promueve la sostenibilidad al priorizar la calidad sobre la cantidad de prendas en el armario.</li>
-                </ul>
-                <p>Además de los beneficios estéticos, la moda minimalista ofrece una conexión tangible con el pasado, permitiéndonos apreciar la artesanía y el diseño de épocas anteriores.</p>
-            </section>
-            <section>
-                <h3 id="tabla">Comparación de Colores Neutros</h3>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Color</th>
-                            <th>Descripción</th>
-                            <th>Combinaciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Blanco</td>
-                            <td>Color puro y limpio</td>
-                            <td>Combina con todos los colores</td>
-                        </tr>
-                        <tr>
-                            <td>Negro</td>
-                            <td>Elegante y atemporal</td>
-                            <td>Combina con todos los colores</td>
-                        </tr>
-                        <tr>
-                            <td>Gris</td>
-                            <td>Neutral y versátil</td>
-                            <td>Combina con blanco, negro y beige</td>
-                        </tr>
-                        <tr>
-                            <td>Beige</td>
-                            <td>Suave y cálido</td>
-                            <td>Combina con blanco, negro y gris</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section>
-                <h3 id="video">Video sobre Moda Minimalista</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NJDmt2ngzKQ?si=arX3bHE8LLkqEnQr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
+            <h2 id="moda">La Moda Minimalista</h2>
+            <p><b>La moda minimalista</b> se caracteriza por la simplicidad, la elegancia y la funcionalidad. Se trata de prendas de colores neutros, líneas limpias y cortes sencillos que nos permiten combinarlas fácilmente entre sí.</p>
+            <blockquote>"Menos es más." - Ludwig Mies van der Rohe</blockquote>
+            <figure>
+                <img src="https://media.vogue.mx/photos/6294c2b6f873e31e8059aa71/master/w_1600%2Cc_limit/278879686_150607687453768_3283693174527572146_n.jpg" alt="modelos">
+            </figure>
         </article>
+        <section>
+            <h2 id="caracteristicas">Características del Estilo Minimalista</h2>
+            <ul>
+                <li><b>Colores Neutros:</b> Blanco, negro, gris y beige son los colores predominantes.</li>
+                <li><b>Líneas Limpias:</b> Prendas con cortes rectos y sin adornos innecesarios.</li>
+                <li><b>Materiales de Calidad:</b> Telas duraderas y de alta calidad.</li>
+                <li><b>Accesorios Mínimos:</b> Uso limitado de accesorios para mantener la simplicidad.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="incorporar">Cómo Incorporar la Moda Minimalista</h2>
+            <ul>
+                <li><b>Prendas Básicas:</b> Opta por camisetas blancas, pantalones rectos y abrigos simples.</li>
+                <li><b>Colores Neutros:</b> Elige una paleta de colores neutros para facilitar las combinaciones.</li>
+                <li><b>Accesorios Simples:</b> Usa relojes de líneas limpias y bolsos de cuero sin adornos.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="tendencias">Tendencias Actuales en Moda Minimalista</h2>
+            <ul>
+                <li><b>Armario Cápsula:</b> Pocas prendas de alta calidad que se adapten a cualquier ocasión.</li>
+                <li><b>Moda Sostenible:</b> Priorizar la calidad sobre la cantidad para reducir el impacto ambiental.</li>
+                <li><b>Versatilidad:</b> Prendas que se pueden combinar de múltiples maneras.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="beneficios">Beneficios de la Moda Minimalista</h2>
+            <ul>
+                <li><b>Calidad:</b> Prendas hechas con materiales de mejor calidad y técnicas de confección más duraderas.</li>
+                <li><b>Unicidad:</b> Cada pieza es única, permitiendo expresar el estilo personal de manera distintiva.</li>
+                <li><b>Sostenibilidad:</b> Promueve la sostenibilidad al priorizar la calidad sobre la cantidad de prendas en el armario.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="tabla">Comparación de Colores Neutros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Descripción</th>
+                        <th>Combinaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blanco</td>
+                        <td>Color puro y limpio</td>
+                        <td>Combina con todos los colores</td>
+                    </tr>
+                    <tr>
+                        <td>Negro</td>
+                        <td>Elegante y atemporal</td>
+                        <td>Combina con todos los colores</td>
+                    </tr>
+                    <tr>
+                        <td>Gris</td>
+                        <td>Neutral y versátil</td>
+                        <td>Combina con blanco, negro y beige</td>
+                    </tr>
+                    <tr>
+                        <td>Beige</td>
+                        <td>Suave y cálido</td>
+                        <td>Combina con blanco, negro y gris</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 id="video">Video sobre Moda Minimalista</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NJDmt2ngzKQ?si=arX3bHE8LLkqEnQr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
     </main>
     <footer>
-        <p>© 2024 Moda Minimalista. Todos los derechos reservados.</p>
+        <address>
+            <p>Desarrollado por Carolina</p>
+            <p>Derechos reservados ©</p>
+        </address>
     </footer>
+    <script src="app.js"></script> 
 </body>
 </html>
