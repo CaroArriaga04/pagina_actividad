@@ -5,63 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda</title>
     <style>
-        .pagina
-        {
-         background-color: rgb(214, 208, 204);   
+        .fondo {
+            font-family: 'Helvetica Neue', Cambria, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #020202;   
         }  
-        .titulo
-        {
-         background-color: rgb(180, 114, 206);   
+        .titulo {
+            background-color: rgb(233, 195, 248);
+            color: #070707;
+            padding: 25px;
+            text-align: center; 
+            margin: 0;
+            font-size: 3em;
         }    
-        .navegacion
-        {
-         background-color: rgb(233, 195, 248);   
-        }  
+        .navegacion {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navegacion li {
+            margin: 0 15px;
+        }
+        .navegacion a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+        .navegacion a:hover {
+            background-color: #f0f0f0;
+        }
+        .cuerpo {
+            padding: 20px;
+        }
+        .subtitulos {
+            border-bottom: 2px solid rgb(210, 108, 250);
+            padding-bottom: 10px;
+        }
+        aside  {
+            padding: 20px;
+        }
+        footer {
+            background-color: rgb(210, 128, 243);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #000;
+        }
+        .imagenes {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 10px; 
+        }
+        .imagenes figure {
+            flex: 1;
+            margin: 0;
+            padding: 0;
+        }
+        .imagenes img {
+            width: 100%;
+            height: auto; 
+        }
+        .pdf-container embed {
+            width: 500px;
+            height: 400px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
     </style>
 </head>
-<body class="pagina">
+<body class="fondo">
     <header>
         <h1 class="titulo">Introduccion a la Moda</h1> 
-        <h2 class="navegacion">Tendencias</h2>
         <ul class="navegacion">
             <li><a href="vintage.html">Moda Vintage</a></li>
             <li><a href="minimalismo.html">Minimalismo</a></li>
             <li><a href="sostenible.html">Moda Sostenible</a></li>
             <li><a href="accesorios.html">Accesorios Destacados</a></li>
-        </ul>  
+        </ul>
     </header>
-    <main>
+</body>
+</html>
+    </header>
+    <main class="cuerpo">
         <article>
-            <header class="pagina">
-                <h2 id="pagina">La moda</h2>
-                <nav>
-                    <ul class="pagina">
-                        <li><a href="#moda">La Moda</a></li> 
-                        <li><a href="#estilos">Estilos de moda</a></li>
-                        <li><a href="#actualidad">La moda en la actualidad</a></li>  
-                    </ul>
-                </nav>
-                <p><b>La moda</b> es una corriente que surge atravez del tiempo en ella encontramos diferentes tipos de estilos, gustos, diseños, colores, telas, etc. Hoy dia la moda es fundamental para cada persona en la sociedad ya que esta nos identifica y nos hace autenticos y con personalidad. La moda es la libre exprecion de cada persona, es la forma en la cual podemos reflejar lo que somos y llevamos dentro en nuestro interior.</p>
-                <p>La moda forma parte de la historia ya que esta es la unica la cual nos muestra como un ser unico; ademas de que esta nos muestra nuestro ser interior  con lo que llevamos puesto a diario. Podemos reflejar lo que somos tanto por dentro como por fuera
-                con todo estoy doy la bienvenida a que conozcan un poco mas de lo que para mi y para el mundo es este tema que es tan fundamental para la vida.</p>
-            </header>
+            <section>
+                <h2 class="subtitulos">La moda</h2>
+                <p><b>La moda</b> es una corriente que surge a través del tiempo en ella encontramos diferentes tipos de estilos, gustos, diseños, colores, telas, etc. Hoy día la moda es fundamental para cada persona en la sociedad ya que esta nos identifica y nos hace auténticos y con personalidad. La moda es la libre expresión de cada persona, es la forma en la cual podemos reflejar lo que somos y llevamos dentro en nuestro interior.</p>
+                <p>La moda forma parte de la historia ya que esta es la única la cual nos muestra como un ser único; además de que esta nos muestra nuestro ser interior con lo que llevamos puesto a diario. Podemos reflejar lo que somos tanto por dentro como por fuera con todo esto doy la bienvenida a que conozcan un poco más de lo que para mí y para el mundo es este tema que es tan fundamental para la vida.</p>
+            </section>
             <section >
-                <h3 id="estilos">Estilos de moda</h3>
-                <figure>
-                    <img width="200px" src="https://www.instyle.es/medio/2023/12/29/estilo-aesthetic-1_9dfcba3c_231229130427_1280x1280.jpg" alt="modelo">
-                    <figcaption>Figura 1. Estilo vintage</figcaption>
-                </figure>
-                <figure>
-                    <img width="200px" src="https://hips.hearstapps.com/hmg-prod/images/boho-estilo-inspiracion-mujer-elle-1612256491.jpg" alt="modelo">
-                    <figcaption>Figura 2. Estilo bohemio</figcaption>
-                </figure>
-                <figure>
-                    <img width="200px" src="https://unycas.com/wp-content/uploads/2019/03/estilo-rock-chica.jpg" alt="modelo">
-                    <figcaption>Figura 3. Estilo rockero</figcaption>
-                </figure>
+                <h2 class="subtitulos" id="estilos">Estilos de moda</h3>
+                <div class="imagenes">
+                    <figure>
+                        <img src="https://www.instyle.es/medio/2023/12/29/estilo-aesthetic-1_9dfcba3c_231229130427_1280x1280.jpg" alt="modelo">
+                        <figcaption>Figura 1. Estilo vintage</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/boho-estilo-inspiracion-mujer-elle-1612256491.jpg" alt="modelo">
+                        <figcaption>Figura 2. Estilo bohemio</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://unycas.com/wp-content/uploads/2019/03/estilo-rock-chica.jpg" alt="modelo">
+                        <figcaption>Figura 3. Estilo rockero</figcaption>
+                    </figure>
+                </div>
             </section>
             <section>
-                <h3 id="actualidad">Estilo en la actualidad</h3>
+                <h2 class="subtitulos" id="actualidad">Estilo en la actualidad</h3>
                 <p>En la actualidad la moda es un tema muy importante para la sociedad ya que esta nos identifica y nos hace unicos. Existen diferentes tendecias de moda que se han ido adaptando a lo largo del tiempo, algunas de estas tendencias actuales son:</p>
                 <ol>
                     <li><b>Sostenibilidad:</b> La moda sostenible está en auge, con un enfoque en la producción de prendas con materiales y procesos respetuosos con el medio ambiente.</li>
@@ -74,13 +149,15 @@
          
             </section>
             <section>
-                <h2>Conoce mas</h2>
+                <h2 class="subtitulos" >Conoce mas</h2>
                 <p>Si quieres conocer mas sobre la moda te proporcionamos este excelente libro que te encantara</p>
-                <embed src="https://d1wqtxts1xzle7.cloudfront.net/55263083/Breve_historia_de_la_moda_Desde_la_Edad_Media_hasta_la_actualidad-libre.pdf?1513019346=&response-content-disposition=inline%3B+filename%3DDesde_la_Edad_Media_hasta_la_actualidad.pdf&Expires=1724694646&Signature=ayyNeSeJzy0jVJFMCARonIgdpy-4EQ-JmP4qzfjVVtICrZA4zO5HuD1jGGN6QPkOj8TetZ0bpfXumhG6EKgk8h3tDgTYUhmZorC94a2IkdDPtoIjDmOg6Bcdy7rZM1wTd2nT~jSuPg47qFI04CRDw0zGKocL2Aw2SbGEAde6tYWD20WePLd-Szd51SgcKgGowUPfyhIC30Kq6SzaJpEZDvrF0g4wxC9lUkf8g~gU34fvEkePFAhQcuc581g~Cq9mwMItR-iJOmRD5Bv934A9Nltew43zgAj5KG59rQkn~~C1GMoKQMX~61RvmkFhU6QqJaVgX0OySwYFFnG-UierCg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" type="application/pdf">
+                <div class="pdf-container">
+                <embed src="https://www.fadp.edu.co/wp-content/uploads/2019/02/4-ilovepdf-compressed.pdf" type="application/pdf">
+                </div>
             </section>
         </article>
         <section>
-            <h3 id="boletin">Suscríbete a nuestro boletín</h3>
+            <h2 class="subtitulos" id="boletin">Suscríbete a nuestro boletín</h3>
             <form action="/subscribe" method="post">
                 <label for="subscribe-name">Nombre:</label><br>
                 <input type="text" id="subscribe-name" name="subscribe-name" required><br>
@@ -91,7 +168,7 @@
         </section>
     </main>
     <aside>
-        <h2 id="aside">Síguenos en Redes Sociales</h2>
+        <h2 class="subtitulos" id="aside">Síguenos en Redes Sociales</h2>
         <div class="social-icons">
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
@@ -103,18 +180,6 @@
             <p>Derechos reservados ©</p>
         </address>
     </footer>
-    <script src="app.js"></script>
-    
-    <style>
-        .social-icons {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-        .social-icons a {
-            text-decoration: none;
-            color: #000;
-        }
-    </style>  
+    <script src="app.js"></script> 
 </body>
 </html>
