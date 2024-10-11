@@ -5,24 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda Vintage</title>
     <style>
-        .pagina
-        {
-         background-color: rgb(231, 221, 221);   
+        .fondo {
+            font-family: 'Helvetica Neue', Cambria, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);   
+            color: #020202;   
         }  
-        .titulo
-        {
-         background-color: rgb(174, 92, 24);   
+        .titulo {
+            background-color: rgb(174, 92, 24);   
+            color: #ffffff;
+            padding: 25px;
+            text-align: center; 
+            margin: 0;
+            font-size: 3em;
         }    
-        .navegacion
-        {
-         background-color: rgb(206, 156, 109);   
-        }  
+        .navegacion {
+            background-color: rgb(255, 255, 255);   
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navegacion li {
+            margin: 0 15px;
+        }
+        .navegacion a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            justify-content: center;
+            margin: 0;
+        }
+        .navegacion a:hover {
+            background-color: #f0f0f0;
+        }
+        .cuerpo {
+            padding: 20px;
+        }
+        .subtitulos {
+            border-bottom: 2px solid rgb(174, 92, 24);
+            padding-bottom: 10px;
+        }
+        aside {
+            padding: 20px;
+        }
+        footer {
+            background-color: rgb(174, 92, 24);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        .imagenes {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 10px; 
+        }
+        .imagenes img {
+            display: block; 
+            width: 900px; 
+            height: 500px;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            margin-top: 20px; /* Espacio superior */
+        }
+
     </style>
 </head>
-<body class="pagina">
+<body class="fondo">
     <header>
         <h1 class="titulo">Moda Vintage</h1>
-        <h2 class="navegacion">Tendencias</h2>
         <ul class="navegacion">
             <li><a href="index.html">La Moda</a></li>
             <li><a href="vintage.html">Moda Vintage</a></li>
@@ -31,26 +97,19 @@
             <li><a href="accesorios.html">Accesorios Destacados</a></li>
         </ul>
     </header>
-    <main>
+    <main class="cuerpo">
         <article>
             <header>
-                <h2 id="moda">La Moda Vintage</h2>
-                <figure>
-                    <img width="400px" src="https://marieclaire.com.mx/wp-content/uploads/2024/05/FACE-14-4-1024x576.jpg" alt="modelos">
-                </figure>
-                <nav>
-                    <ul>
-                        <li><a href="#moda">La Moda Vintage</a></li> 
-                        <li><a href="#caracteristicas">Características</a></li>
-                        <li><a href="#incorporar">Cómo Incorporar</a></li>
-                        <li><a href="#tendencias">Tendencias Actuales</a></li>
-                        <li><a href="#beneficios">Beneficios</a></li>
-                    </ul>
-                </nav>
+                <h2 id="moda" class="subtitulos">La Moda Vintage</h2>
                 <p><b>La moda vintage</b> se inspira en las tendencias de décadas pasadas, generalmente desde los años 1920 hasta los 1990. Es una forma de moda que valora la autenticidad, la sostenibilidad y la nostalgia.</p>
+                <div class="imagenes">
+                    <figure>
+                        <img src="https://marieclaire.com.mx/wp-content/uploads/2024/05/FACE-14-4-1024x576.jpg" alt="modelos">
+                    </figure>
+                </div>
             </header>
             <section>
-                <h3 id="caracteristicas">Características del Estilo Vintage</h3>
+                <h3 id="caracteristicas" class="subtitulos">Características del Estilo Vintage</h3>
                 <ul>
                     <li><b>Autenticidad:</b> Prendas únicas y de alta calidad.</li>
                     <li><b>Sostenibilidad:</b> Reduce la demanda de nuevas prendas y ayuda a disminuir el impacto ambiental.</li>
@@ -59,7 +118,7 @@
                 <p>La moda vintage no solo es una elección de estilo, sino también una declaración de principios. Al optar por prendas vintage, estás apoyando una moda más ética y consciente.</p>
             </section>
             <section>
-                <h3 id="incorporar">Cómo Incorporar la Moda Vintage</h3>
+                <h3 id="incorporar" class="subtitulos">Cómo Incorporar la Moda Vintage</h3>
                 <ul>
                     <li><b>Tiendas de Segunda Mano y Mercadillos:</b> Busca prendas en buen estado que puedan integrarse en tu guardarropa actual.</li>
                     <li><b>Combinación con Prendas Modernas:</b> Mezcla prendas vintage con ropa moderna para un look único.</li>
@@ -68,7 +127,7 @@
                 <p>Incorporar la moda vintage en tu estilo diario puede ser tan simple como añadir un accesorio retro o tan audaz como llevar un conjunto completo de otra época.</p>
             </section>
             <section>
-                <h3 id="tendencias">Tendencias Actuales en Moda Vintage</h3>
+                <h3 id="tendencias" class="subtitulos">Tendencias Actuales en Moda Vintage</h3>
                 <ul>
                     <li><b>Décadas Populares:</b> Los años 70 y 90 están especialmente de moda.</li>
                     <li><b>Moda Retro:</b> Estilos pasados con un toque moderno.</li>
@@ -77,7 +136,7 @@
                 <p>Las tendencias actuales en moda vintage reflejan un deseo de volver a lo auténtico y duradero, en contraste con la moda rápida y desechable de hoy en día.</p>
             </section>
             <section>
-                <h3 id="beneficios">Beneficios de la Moda Vintage</h3>
+                <h3 id="beneficios" class="subtitulos">Beneficios de la Moda Vintage</h3>
                 <ul>
                     <li><b>Calidad:</b> Prendas hechas con materiales de mejor calidad y técnicas de confección más duraderas.</li>
                     <li><b>Unicidad:</b> Cada pieza es única, permitiendo expresar el estilo personal de manera distintiva.</li>
@@ -86,13 +145,18 @@
                 <p>Además de los beneficios estéticos, la moda vintage ofrece una conexión tangible con el pasado, permitiéndonos apreciar la artesanía y el diseño de épocas anteriores.</p>
             </section>
             <section>
-                <h3>Musica que te hace regresar al pasado</h3>
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/co/album/falling-in-love-with-you/1006904132?i=1006904133"></iframe>
-            </section>
+                <h3 class="subtitulos">Música que te hace regresar al pasado</h3>
+                <div class="iframe-container">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/co/album/falling-in-love-with-you/1006904132?i=1006904133"></iframe>
+                </div>
+            </section>            
         </article>
     </main>
     <footer>
-        <p>© 2024 Moda Vintage. Todos los derechos reservados.</p>
+        <address>
+            <p>Desarrollado por Carolina</p>
+            <p>Derechos reservados ©</p>
+        </address>
     </footer>
 </body>
 </html>
